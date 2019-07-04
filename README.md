@@ -1,9 +1,3 @@
-
-
-![Screenshot of the interface of the Sugar Candy theme for SDDM](Previews/PartialBlur.png "The default interface of the Sugar Candy theme for SDDM")
-
-# Sugar Candy login theme for SDDM
-
 You asked for more, you shall get it. Sugar Candy is the latest release in the Sugar series of SDDM themes. It's so extremely sweet your pancreas will have difficulties digesting its awesomeness.  
 
 Sweeten the login experience for your users, your family and yourself. Sugar Candy works on almost all major distributions—see below—and focuses on a straight forward user experience and superb functionality while still offering vast customization possibilities.  
@@ -13,15 +7,15 @@ All controls use the [latest Qt Quick Controls 2](http://doc.qt.io/qt-5/qtquickc
 
 To learn how to control sugar levels read the section below about customization. There are **40 customizable variables** in total! This candy will be yours and only yours.
 
-## Installation
+### Installation
 
-#### From within KDE Plasma
+**From within KDE Plasma**
 
 If you are on [KDE Plasma](https://www.kde.org/plasma-desktop)—by default [Manjaro](https://manjaro.org/), [OpenSuse](https://www.opensuse.org/), [Neon](https://neon.kde.org/), [Kubuntu](https://kubuntu.org/), [KaOS](https://kaosx.us/) or [Chakra](https://www.chakralinux.org/) for example—you are lucky and can simply go to your system settings and under "Startup and Shutdown" followed by "Login Screen (SDDM)" click "Get New Theme". From there search for "Sugar Candy" and install.
 
 If for some reason you cannot find the category named "Login Screen (SDDM)" in your system settings then you are missing the module `sddm-kcm`. Install this little helper with your package manager first. You will be grateful you did.
 
-#### From other desktop environments
+**From other desktop environments**
 
 [Download the tar archive from opendesktop](https://www.opendesktop.org/p/1272122) and extract the contents to the theme directory of SDDM *(change the path for the downloaded file if necessary)*:
 ```
@@ -34,7 +28,7 @@ After that you will have to point SDDM to the new theme by editing its config fi
 
 In the `[Theme]` section simply add the themes name to this line: `Current=sugar-candy`. If you don't care for SDDM options and you had to create the file from blank just add these two lines and save it. Also see the [Arch wiki on SDDM](https://wiki.archlinux.org/index.php/SDDM).
 
-#### Dependencies
+**Dependencies**
 
 [SDDM  >= 0.18](https://github.com/sddm/sddm) & [Qt5 >= 5.11](https://doc.qt.io/archives/qt-5.11/index.html)  
 including: [`Qt Quick Controls 2`](https://doc.qt.io/archives/qt-5.11/qtquickcontrols2-index.html), [`Qt Graphical Effects`](https://doc.qt.io/archives/qt-5.11/qtgraphicaleffects-index.html), [`Qt SVG`](https://doc.qt.io/archives/qt-5.11/qtsvg-index.html), [`Qt Quick Layouts`](https://doc.qt.io/archives/qt-5.11/qtquicklayouts-index.html) each `>= 5.11`—*see below for distro specific package names*  
@@ -56,7 +50,7 @@ including: [`Qt Quick Controls 2`](https://doc.qt.io/archives/qt-5.11/qtquickcon
 *(Fedora/Mageia/RHEL/CentOS)*  
 `sudo dnf install sddm qt5-qtgraphicaleffects qt5-qtquickcontrols2 qt5-qtsvg`
 
-## Configuration
+### Configuration
 
 The sugar series is **extremely customizable** by editing its included `theme.conf` file. You can change the colors and images used, the time and date formats, the appearance of the whole interface and even how it works.  
 And as if that wouldn't still be enough you can translate every single button and label because SDDM is still lacking behind with localization and clearly [needs your help](https://github.com/sddm/sddm/wiki/Localization)!
@@ -162,15 +156,7 @@ And as if that wouldn't still be enough you can translate every single button an
 **TranslateShutdown=""**  
 *These don't necessarily need to translate anything. You can enter whatever you want here.*  
 
-## Examples
-These are some previews of configurations possible with Sugar Candy.
-![Screenshot of Sugar Candy using an illustration as background.](Previews/ScaleImageCropped.png "An SVG illustration used as background")
-![Screenshot of Sugar Candy having a padding around the whole screen.](Previews/ScreenPadding.png "Using padding for the whole screen")
-![Screenshot of Sugar Candy with a right to left layout.](Previews/ForceRightToLeft.png "Right to left layout")
-![Screenshot of Sugar Candy with fully blurred background.](Previews/FullBlur.png "With fully blurred background")
-![Screenshot of Sugar Candy selection popup.](Previews/InterfacePopup.png "Interface popup")
-
-## Legal Notice
+### Legal Notice
 
 Copyright (C) 2018 Marian Arlt.  
 
