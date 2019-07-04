@@ -7,7 +7,7 @@ All controls use the [latest Qt Quick Controls 2](http://doc.qt.io/qt-5/qtquickc
 
 To learn how to control sugar levels read the section below about customization. There are **40 customizable variables** in total! This candy will be yours and only yours.  
 
-
+<br/><br/>
 ### Installation  
 
 **From within KDE Plasma**  
@@ -51,7 +51,7 @@ including: [`Qt Quick Controls 2`](https://doc.qt.io/archives/qt-5.11/qtquickcon
 *(Fedora/Mageia/RHEL/CentOS)*  
 `sudo dnf install sddm qt5-qtgraphicaleffects qt5-qtquickcontrols2 qt5-qtsvg`  
 
-
+<br/><br/>
 ### Configuration
 
 The sugar series is **extremely customizable** by editing its included `theme.conf` file. You can change the colors and images used, the time and date formats, the appearance of the whole interface and even how it works.  
@@ -158,7 +158,7 @@ And as if that wouldn't still be enough you can translate every single button an
 **TranslateShutdown=""**  
 *These don't necessarily need to translate anything. You can enter whatever you want here.*  
 
-
+<br/><br/>
 ### Legal Notice
 
 Copyright (C) 2018 Marian Arlt.  
@@ -169,7 +169,7 @@ Sugar Candy is distributed in the hope that it will be useful, but WITHOUT ANY W
 
 You should have received a copy of the GNU General Public License along with Sugar Candy. If not, see <https://www.gnu.org/licenses/>.  
 
-
+<br/><br/>
 ### Other awesome projects
 
 - [Chili—the hottest login theme for KDE Plasma](https://www.opendesktop.org/p/1214121)
@@ -178,7 +178,7 @@ You should have received a copy of the GNU General Public License along with Sug
 - [Finely crafted folder icons for Linux](https://www.opendesktop.org/p/1228310)
 - [Inline clock widget for KDE Plasma](https://www.opendesktop.org/p/1245902)
 
-
+<br/><br/>
 ### Motivate a developer
 
 In the past years I have spent quite some hours on open source projects. If you are the type of person who digs attention to detail, know how much work is involved in it and/or simply likes to support makers with a coffee or a beer I would greatly appreciate your donation on my [PayPayl](https://www.paypal.me/marianarlt) account.  
