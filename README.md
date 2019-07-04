@@ -20,7 +20,7 @@ If for some reason you cannot find the category named "Login Screen (SDDM)" in y
 
 Download the tar archive from the files tab of this web page and extract the contents to the theme directory of SDDM *(change the path for the downloaded file if necessary)*:
 ```
-$ sudo tar -xzvf ~/Downloads/sugar-candy.tar.gz -C /usr/share/sddm/themes
+$ sudo tar -xzvf ~/sugar-candy.tar.gz -C /usr/share/sddm/themes
 ```
 This will extract all the files to a folder called "sugar-candy" inside of the themes directory of SDDM.  
 
