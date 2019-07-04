@@ -5,17 +5,18 @@ Sweeten the login experience for your users, your family and yourself. Sugar Can
 Sugar Candy is based on the Sugar series which was **written completely from scratch** making it clean and simple not only by looks but by design too.  
 All controls use the [latest Qt Quick Controls 2](http://doc.qt.io/qt-5/qtquickcontrols2-index.html) for [increased performance](https://blog.qt.io/blog/2015/03/31/qt-quick-controls-for-embedded/) on low end or even embedded systems and beautiful color transitions.  
 
-To learn how to control sugar levels read the section below about customization. There are **40 customizable variables** in total! This candy will be yours and only yours.
+To learn how to control sugar levels read the section below about customization. There are **40 customizable variables** in total! This candy will be yours and only yours.  
 
-### Installation
 
-**From within KDE Plasma**
+### Installation  
+
+**From within KDE Plasma**  
 
 If you are on [KDE Plasma](https://www.kde.org/plasma-desktop)—by default [Manjaro](https://manjaro.org/), [OpenSuse](https://www.opensuse.org/), [Neon](https://neon.kde.org/), [Kubuntu](https://kubuntu.org/), [KaOS](https://kaosx.us/) or [Chakra](https://www.chakralinux.org/) for example—you are lucky and can simply go to your system settings and under "Startup and Shutdown" followed by "Login Screen (SDDM)" click "Get New Theme". From there search for "Sugar Candy" and install.
 
 If for some reason you cannot find the category named "Login Screen (SDDM)" in your system settings then you are missing the module `sddm-kcm`. Install this little helper with your package manager first. You will be grateful you did.
 
-**From other desktop environments**
+**From other desktop environments**  
 
 [Download the tar archive from opendesktop](https://www.opendesktop.org/p/1272122) and extract the contents to the theme directory of SDDM *(change the path for the downloaded file if necessary)*:
 ```
@@ -26,7 +27,7 @@ This will extract all the files to a folder called "sugar-candy" inside of the t
 
 After that you will have to point SDDM to the new theme by editing its config file, preferrably at `/etc/sddm.conf` *(create if necessary)*. You can take the default config file of SDDM as a reference: `/etc/sddm.conf/usr/lib/sddm/sddm.conf.d/sddm.conf`.  
 
-In the `[Theme]` section simply add the themes name to this line: `Current=sugar-candy`. If you don't care for SDDM options and you had to create the file from blank just add these two lines and save it. Also see the [Arch wiki on SDDM](https://wiki.archlinux.org/index.php/SDDM).
+In the `[Theme]` section simply add the themes name to this line: `Current=sugar-candy`. If you don't care for SDDM options and you had to create the file from blank just add these two lines and save it. Also see the [Arch wiki on SDDM](https://wiki.archlinux.org/index.php/SDDM).  
 
 **Dependencies**
 
@@ -43,12 +44,13 @@ including: [`Qt Quick Controls 2`](https://doc.qt.io/archives/qt-5.11/qtquickcon
 *(Obarun/Artix/Manjaro/KaOS/Chakra etc.)*  
 `sudo pacman -S --needed sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg`  
 
-**openSUSE** using the **zypper** package manager:
+**openSUSE** using the **zypper** package manager:  
 `sudo zypper install sddm libqt5-qtgraphicaleffects libqt5-qtquickcontrols2 libQt5Svg5 libQt5Svg5`
 
 **Red Hat** based distros using the **dnf** package manager:  
 *(Fedora/Mageia/RHEL/CentOS)*  
-`sudo dnf install sddm qt5-qtgraphicaleffects qt5-qtquickcontrols2 qt5-qtsvg`
+`sudo dnf install sddm qt5-qtgraphicaleffects qt5-qtquickcontrols2 qt5-qtsvg`  
+
 
 ### Configuration
 
@@ -156,6 +158,7 @@ And as if that wouldn't still be enough you can translate every single button an
 **TranslateShutdown=""**  
 *These don't necessarily need to translate anything. You can enter whatever you want here.*  
 
+
 ### Legal Notice
 
 Copyright (C) 2018 Marian Arlt.  
@@ -164,7 +167,8 @@ Sugar Candy is free software: you can redistribute it and/or modify it under the
 
 Sugar Candy is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.  
 
-You should have received a copy of the GNU General Public License along with Sugar Candy. If not, see <https://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License along with Sugar Candy. If not, see <https://www.gnu.org/licenses/>.  
+
 
 ### Other awesome projects
 
@@ -173,6 +177,7 @@ You should have received a copy of the GNU General Public License along with Sug
 - [Flat OSX like aurorae window decorations for your Linux desktop](https://www.opendesktop.org/p/1199822) and [its high contrast version](https://www.opendesktop.org/p/1246756)
 - [Finely crafted folder icons for Linux](https://www.opendesktop.org/p/1228310)
 - [Inline clock widget for KDE Plasma](https://www.opendesktop.org/p/1245902)
+
 
 ### Motivate a developer
 
