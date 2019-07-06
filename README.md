@@ -56,7 +56,7 @@ including: [`Qt Quick Controls 2`](https://doc.qt.io/archives/qt-5.11/qtquickcon
 The sugar series is **extremely customizable** by editing its included `theme.conf` file. You can change the colors and images used, the time and date formats, the appearance of the whole interface and even how it works.  
 
 **Pro tip**: It's super annoying to log out and back in every time you want to see a change made to the `theme.conf` file. To preview your changes from withing your running desktop environment session issue:  
-`sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar‑candy`  
+<pre style="overflow-x: scroll">sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-candy</pre>  
 
 And as if that wouldn't still be enough you can translate every single button and label because SDDM is still lacking behind with localization and clearly [needs your help](https://github.com/sddm/sddm/wiki/Localization)!  
 
