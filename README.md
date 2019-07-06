@@ -18,10 +18,10 @@ If for some reason you cannot find the category named "Login Screen (SDDM)" in y
 
 **From other desktop environments**  
 
-Download the tar archive from the files tab of this web page and extract the contents to the theme directory of SDDM *(change the path for the downloaded file if necessary)*:
-```
-$ sudo tar -xzvf ~/sugar‑candy.tar.gz -C /usr/share/sddm/themes
-```
+Download the tar archive from the files tab of this web page and extract the contents to the theme directory of SDDM *(change the path for the downloaded file if necessary)*:  
+
+<pre>$ sudo tar -xzvf ~/sugar‑candy.tar.gz -C /usr/share/sddm/themes</pre>  
+
 This will extract all the files to a folder called "sugar‑candy" inside of the themes directory of SDDM.  
 
 After that you will have to point SDDM to the new theme by editing its config file, preferrably at `/etc/sddm.conf` *(create if necessary)*. You can take the default config file of SDDM as a reference which might be found at: `/usr/lib/sddm/sddm.conf.d/sddm.conf`.  
@@ -35,6 +35,7 @@ including: [`Qt Quick Controls 2`](https://doc.qt.io/archives/qt-5.11/qtquickcon
 
 *Make sure these are installed with their required version or higher! SDDM might need an enabled system service/daemon to work. This is often done automatically during installation. Take note that a lot of standard release distros like Debian, Mint, MX, Elementary, Deepin or Ubuntu LTS are still on earlier versions. If in doubt ask in your distros forums.*  
 
+<br>  
 **Debian based** distros using the **APT** package manager:  
 *(Ubuntu/Kubuntu/Kali/Neon/antiX etc.)*  
 <pre>sudo apt install --no-install-recommends sddm qml‑module‑qtquick‑layouts qml‑module‑qtgraphicaleffects qml‑module‑qtquick‑controls2 libqt5svg5</pre>  
