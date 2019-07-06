@@ -58,7 +58,7 @@ The sugar series is **extremely customizable** by editing its included `theme.co
 **Pro tip**: It's super annoying to log out and back in every time you want to see a change made to the `theme.conf` file. To preview your changes from withing your running desktop environment session issue:  
 <pre>sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-candy</pre>  
 
-And as if that wouldn't still be enough you can translate every single button and label because SDDM is still lacking behind with localization and clearly [needs your help](https://github.com/sddm/sddm/wiki/Localization)!  
+And as if that wouldn't still be enough you can **translate every single button and label** because SDDM still [needs your help](https://github.com/sddm/sddm/wiki/Localization) to make localization as complete as possible!  
 
 **Background="Backgrounds/Mountain.jpg"**  
 *Path relative to the theme root directory. Most standard image file formats are allowed including support for transparency. (e.g. background.jpeg/illustration.GIF/Foto.png/undraw.svgz)*  
