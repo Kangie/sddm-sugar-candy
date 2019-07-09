@@ -1,11 +1,11 @@
 [SddmGreeterTheme]
 Name=Sugar Candy
-Description=Premium Sugar for SDDM!
+Description=Premium Sugar for SDDM
 Author=Marian Arlt
 Copyright=Copyright (C) 2018 Marian Arlt
 License=GPL-3.0-or-later
 Type=sddm-theme
-Version=1.0
+Version=1.1
 Website=https://framagit.org/MarianArlt/sddm-sugar-candy
 Screenshot=Previews/PartialBlur.png
 MainScript=Main.qml
