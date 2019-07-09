@@ -292,11 +292,10 @@ Column {
                 id: indicatorLabel
                 text: config.TranslateShowPassword || "Show Password"
                 anchors.verticalCenter: indicator.verticalCenter
-                anchors.verticalCenterOffset: -1
                 horizontalAlignment: Text.AlignLeft
                 anchors.left: indicator.right
                 anchors.leftMargin: indicator.width / 2
-                font.pointSize: root.font.pointSize * 0.75
+                font.pointSize: root.font.pointSize * 0.8
                 color: root.palette.text
             }
 
