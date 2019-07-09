@@ -135,6 +135,9 @@ And as if that wouldn't still be enough you can translate every single button an
 **ForceHideCompletePassword="false"**  
 *If you don't like to see any character at all not even while being entered set this to true.*  
 
+**ForceHideVirtualKeyboardButton="false"**  
+*Do not show the button for the virtual keyboard at all. This will completely disable functionality for the virtual keyboard even if it is installed and activated in sddm.conf*  
+
 **Locale=""**  
 *The time and date locale should usually be set in your system settings. Only hard set this if something is not working by default or you want a seperate locale setting in your login screen.*  
 
@@ -160,6 +163,7 @@ And as if that wouldn't still be enough you can translate every single button an
 **TranslateHibernate=""**  
 **TranslateReboot=""**  
 **TranslateShutdown=""**  
+**TranslateVirtualKeyboardButton=""**  
 *These don't necessarily need to translate anything. You can enter whatever you want here.*  
 
 ## Examples
