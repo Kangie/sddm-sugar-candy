@@ -137,6 +137,9 @@ And as if that wouldn't still be enough you can **translate every single button 
 **`ForceHideVirtualKeyboardButton="false"`**  
 *Do not show the button for the virtual keyboard at all. This will completely disable functionality for the virtual keyboard even if it is installed and activated in sddm.conf*  
 
+**`ForceHideSystemButtons="false"`**  
+*Completely disable and hide any power buttons on the greeter.*  
+
 **`Locale=""`**  
 *The time and date locale should usually be set in your system settings. Only hard set this if something is not working by default or you want a seperate locale setting in your login screen.*  
 
