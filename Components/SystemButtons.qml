@@ -30,14 +30,14 @@ RowLayout {
     property var reboot: ["Reboot", config.TranslateReboot || textConstants.reboot, sddm.canReboot]
     property var shutdown: ["Shutdown", config.TranslateShutdown || textConstants.shutdown, sddm.canPowerOff]
 
-    property Control exposedLogin
+    property Control exposedSession
 
     Repeater {
 
+        id: systemButtons
         model: [suspend, hibernate, reboot, shutdown]
 
         RoundButton {
-            id: icon
             text: modelData[1]
             font.pointSize: root.font.pointSize * 0.8
             Layout.alignment: Qt.AlignHCenter
@@ -52,7 +52,7 @@ RowLayout {
                 height: 2
                 color: "transparent"
                 width: parent.width
-                border.width: parent.visualFocus ? 1 : 0
+                border.width: parent.activeFocus ? 1 : 0
                 border.color: "transparent"
                 anchors.top: parent.bottom
             }
@@ -61,8 +61,8 @@ RowLayout {
                 parent.forceActiveFocus()
                 index == 0 ? sddm.suspend() : index == 1 ? sddm.hibernate() : index == 2 ? sddm.reboot() : sddm.powerOff()
             }
-            KeyNavigation.up: exposedLogin
-            KeyNavigation.left: index == 0 ? exposedLogin : parent.children[index-1]
+            KeyNavigation.up: exposedSession
+            KeyNavigation.left: parent.children[index-1]
 
             states: [
                 State {
@@ -91,7 +91,7 @@ RowLayout {
                 },
                 State {
                     name: "focused"
-                    when: parent.children[index].visualFocus
+                    when: parent.children[index].activeFocus
                     PropertyChanges {
                         target: parent.children[index]
                         palette.buttonText: root.palette.highlight
