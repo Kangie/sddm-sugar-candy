@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4] - 2019-11-12
+### Fixed
+- Username now gets automatically converted to lowercase at login to prevent errors
+
 ## [1.3] - 2019-10-04
 ### Fixed
 - The Login button can now be activated with Return/Enter keys
