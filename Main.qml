@@ -46,22 +46,22 @@ Pane {
     property bool leftleft: config.HaveFormBackground == "true" &&
                             config.PartialBlur == "false" &&
                             config.FormPosition == "left" &&
-                            config.BackgroundImageAlignment == "left"
+                            config.BackgroundImageHAlignment == "left"
 
     property bool leftcenter: config.HaveFormBackground == "true" &&
                               config.PartialBlur == "false" &&
                               config.FormPosition == "left" &&
-                              config.BackgroundImageAlignment == "center"
+                              config.BackgroundImageHAlignment == "center"
 
     property bool rightright: config.HaveFormBackground == "true" &&
                               config.PartialBlur == "false" &&
                               config.FormPosition == "right" &&
-                              config.BackgroundImageAlignment == "right"
+                              config.BackgroundImageHAlignment == "right"
 
     property bool rightcenter: config.HaveFormBackground == "true" &&
                                config.PartialBlur == "false" &&
                                config.FormPosition == "right" &&
-                               config.BackgroundImageAlignment == "center"
+                               config.BackgroundImageHAlignment == "center"
 
     Item {
         id: sizeHelper
