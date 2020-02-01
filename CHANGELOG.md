@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.6] - 2020-02-01
+### Fixed
+- A few small fixes
+
 ## [1.5] - 2020-01-30
 ### Fixed
 - The username input now gets selected on focus
