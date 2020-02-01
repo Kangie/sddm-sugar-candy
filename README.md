@@ -140,6 +140,12 @@ And as if that wouldn't still be enough you can **translate every single button 
 **`ForceHideSystemButtons="false"`**  
 *Completely disable and hide any power buttons on the greeter.*  
 
+**`AllowEmptyPassword="false"`**
+*Enable login for users without a password. This is discouraged. Makes the login button always enabled.*
+
+**`AllowBadUsernames="false"`**
+*Do not change this! Uppercase letters are generally not allowed in usernames. This option is only for systems that differ from this standard! Also shows username as is instead of capitalized.*
+
 **`Locale=""`**  
 *The time and date locale should usually be set in your system settings. Only hard set this if something is not working by default or you want a seperate locale setting in your login screen.*  
 
@@ -171,13 +177,27 @@ And as if that wouldn't still be enough you can **translate every single button 
 <br/><br/>
 ### Legal Notice
 
-Copyright (C) 2018 Marian Arlt.  
+This file is part of SDDM Sugar Candy.
+A theme for the Simple Display Desktop Manager.
 
-Sugar Candy is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.  
+Copyright (C) 2018–2020 Marian Arlt
 
-Sugar Candy is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.  
+  SDDM Sugar Candy is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or any later version.
 
-You should have received a copy of the GNU General Public License along with Sugar Candy. If not, see <https://www.gnu.org/licenses/>.  
+  You are required to preserve this and any additional legal notices, either
+contained in this file or in other files that you received along with
+SDDM Sugar Candy that refer to the author(s) in accordance with
+sections §4, §5 and specifically §7b of the GNU General Public License.
+
+  SDDM Sugar Candy is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+along with SDDM Sugar Candy. If not, see <https://www.gnu.org/licenses/>
 
 <br/><br/>
 ### Other awesome projects
