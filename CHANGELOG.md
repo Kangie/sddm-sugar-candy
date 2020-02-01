@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.5] - 2020-01-30
+### Fixed
+- The username input now gets selected on focus
+
+### Added
+- Option to allow usernames with mixed case lettering. This is highly discouraged!
+- Option to allow login without password. Makes the login button always enabled.
+
+### Changed
+- The user dropdown select now only shows the username not the real name.
+
 ## [1.4] - 2019-11-12
 ### Fixed
 - Username now gets automatically converted to lowercase at login to prevent errors

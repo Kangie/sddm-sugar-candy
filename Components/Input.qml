@@ -67,7 +67,7 @@ Column {
                 width: parent.width
                 anchors.horizontalCenter: parent.horizontalCenter
                 contentItem: Text {
-                    text: model.realName != "" ? model.realName : model.name
+                    text: model.name
                     font.pointSize: root.font.pointSize * 0.8
                     font.capitalization: Font.Capitalize
                     color: selectUser.highlightedIndex === index ? root.palette.highlight.hslLightness >= 0.7 ? "#444" : "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight.hslLightness >= 0.8 ? "#444" : root.palette.highlight : "white"
@@ -176,7 +176,7 @@ Column {
         TextField {
             id: username
             text: config.ForceLastUser == "true" ? selectUser.currentText : null
-            font.capitalization: Font.Capitalize
+            font.capitalization: config.AllowBadUsernames == "false" ? Font.Capitalize : Font.MixedCase
             anchors.centerIn: parent
             height: root.font.pointSize * 3
             width: parent.width
@@ -184,6 +184,10 @@ Column {
             selectByMouse: true
             horizontalAlignment: TextInput.AlignHCenter
             renderType: Text.QtRendering
+            onFocusChanged:{
+                if(focus)
+                    selectAll()
+            }
             background: Rectangle {
                 color: "transparent"
                 border.color: root.palette.text
@@ -454,7 +458,7 @@ Column {
             text: config.TranslateLogin || textConstants.login
             height: root.font.pointSize * 3
             implicitWidth: parent.width
-            enabled: username.text != "" && password.text != "" ? true : false
+            enabled: config.AllowEmptyPassword == "true" || username.text != "" && password.text != "" ? true : false
             hoverEnabled: true
 
             contentItem: Text {
@@ -536,7 +540,7 @@ Column {
                 }
             ]
 
-            onClicked: sddm.login(username.text.toLowerCase(), password.text, sessionSelect.selectedSession)
+            onClicked: config.AllowBadUsernames == "false" ? sddm.login(username.text.toLowerCase(), password.text, sessionSelect.selectedSession) : sddm.login(username.text, password.text, sessionSelect.selectedSession)
             Keys.onReturnPressed: clicked()
             Keys.onEnterPressed: clicked()
             KeyNavigation.down: sessionSelect.exposeSession
