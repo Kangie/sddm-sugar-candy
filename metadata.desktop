@@ -14,3 +14,4 @@ TranslationsDirectory=translations
 Email=marianarlt@icloud.com
 Theme-Id=sugar-candy
 Theme-API=2.11
+QtVersion=6
