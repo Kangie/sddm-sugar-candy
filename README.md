@@ -1,3 +1,9 @@
+# THIS IS NOT MAINTAINED. USE THE FORK HERE:
+
+https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/
+
+-----
+
 You asked for more, you shall get it. Sugar Candy is the latest release in the Sugar series of SDDM themes. It's so extremely sweet your pancreas will have difficulties digesting its awesomeness.  
 
 Sweeten the login experience for your users, your family and yourself. Sugar Candy works on almost all major distributions—see below—and focuses on a straight forward user experience and superb functionality while still offering vast customization possibilities.  
